@@ -453,7 +453,7 @@ export class ContactsComponent implements OnInit {
     },
     {
       title: 'Colors',
-      style:[
+      style: [
         {
           "featureType": "administrative",
           "elementType": "labels.text.fill",
@@ -731,7 +731,6 @@ export class ContactsComponent implements OnInit {
         lon: 22.122914
       }
     }
-
 
 
   ];
