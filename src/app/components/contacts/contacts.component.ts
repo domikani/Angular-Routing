@@ -13,17 +13,18 @@ export class ContactsComponent implements OnInit {
 
   ngOnInit() {
   }
+
   public mapStyles = "";
 
 
   public styles = [
     {
-      Title: 'Default',
-      Style: null
+      title: 'Default',
+      style: null
     },
     {
-      Title: 'GreenSpaces',
-      Style: [
+      title: 'Green Spaces',
+      style: [
         {
           'featureType': 'all',
           'elementType': 'geometry.fill',
@@ -301,8 +302,8 @@ export class ContactsComponent implements OnInit {
 
     },
     {
-      Title: 'Google Road Labels Only',
-      Style: [
+      title: 'Google Road Labels Only',
+      style: [
         {
           'featureType': 'administrative',
           'elementType': 'labels',
@@ -451,8 +452,8 @@ export class ContactsComponent implements OnInit {
 
     },
     {
-      Title: 'Colors',
-      Style:[
+      title: 'Colors',
+      style:[
         {
           "featureType": "administrative",
           "elementType": "labels.text.fill",
@@ -691,31 +692,46 @@ export class ContactsComponent implements OnInit {
 
   public mapZoom: number = 6;
   public center = {
-    lat: 38.3683141,
-    lon: 24.2728833
+    lat: 37.9908997,
+    lon: 23.70332
   };
   public departments = [
     {
-      title: 'IEK ΔΕΛΤΑ 360 Θεσσαλονίκη',
+      title: 'IEK ΔΕΛΤΑ 360° Θεσσαλονίκης',
       coordinates: {
         lat: 40.6350826,
         lon: 22.9427111
       }
     },
     {
-      title: 'IEK ΔΕΛΤΑ 360 Ιωάννινα',
+      title: 'IEK ΔΕΛΤΑ 360° Ιωαννίνων',
       coordinates: {
         lat: 39.6503847,
         lon: 20.8321143
       }
     },
     {
-      title: 'IEK ΔΕΛΤΑ 360 Πάτρα',
+      title: 'IEK ΔΕΛΤΑ 360° Πάτρας',
       coordinates: {
         lat: 38.249665,
         lon: 21.7338435
       }
+    },
+    {
+      title: 'IEK ΔΕΛΤΑ 360° Χανίων',
+      coordinates: {
+        lat: 35.5135366,
+        lon: 24.0130289
+      }
+    },
+    {
+      title: 'IEK ΔΕΛΤΑ 360° Καλαμάτας',
+      coordinates: {
+        lat: 37.0369229,
+        lon: 22.122914
+      }
     }
+
 
 
   ];
