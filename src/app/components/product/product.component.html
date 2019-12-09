@@ -1,1 +1,13 @@
-{{product | json}}
+<div class="container">
+  <div class="row">
+    <div class="col-6 mt-2">
+      <img [src]="product.photo" class="img-fluid"/>
+    </div>
+    <div class="col-6 mt-2">
+      <h3>{{product.name}}</h3>
+      <h1 *ngIf="product.sale; else elseBlock">{{product.sale}}&euro;</h1>
+      <ng-template #elseBlock><h1>{{product.price}}&euro;</h1></ng-template>
+
+    </div>
+  </div>
+</div>
